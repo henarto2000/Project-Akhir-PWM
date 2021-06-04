@@ -1,0 +1,55 @@
+{
+  "short_name": "Project Akhir BDA",
+  "name": "Menuliskan Identitas Mahasiswa",
+  "icons": [
+    {
+      "src": "https://cdn.glitch.com/8ff1d0e6-8a31-47d6-810d-67515f159aa0%2FMask%20Image.png?v=1622778693423",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://cdn.glitch.com/8ff1d0e6-8a31-47d6-810d-67515f159aa0%2FMask%20Image.png?v=1622778693423",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "https://cdn.glitch.com/8ff1d0e6-8a31-47d6-810d-67515f159aa0%2Fmaskable_icon.png?v=1622779103538",
+      "sizes": "196x196",
+      "type": "image/png",
+      "purpose": "maskable" // <-- New property value `"maskable"`
+    }
+  ],
+  "start_url": "https://project-akhir-henry.glitch.me/",
+  "background_color": "#3367D6",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#3367D6",
+  "shortcuts": [
+    {
+      "name": "Identitas Mahasiswa",
+      "short_name": "Identitas",
+      "description": "Identitas Henry Winarto",
+      "url": "https://project-akhir-henry.glitch.me/",
+      "icons": [{ "src": "https://cdn.glitch.com/8ff1d0e6-8a31-47d6-810d-67515f159aa0%2FMask%20Image.png?v=1622778693423", "sizes": "192x192" }]
+    },
+    {
+      "name": "Mata Kuliah",
+      "short_name": "Matkul",
+      "description": "Menampilkan Daftar Mata Kuliah",
+      "url": "https://project-akhir-henry.glitch.me/mata_kuliah.html",
+      "icons": [{ "src": "https://cdn.glitch.com/8ff1d0e6-8a31-47d6-810d-67515f159aa0%2FMask%20Image.png?v=1622778693423", "sizes": "192x192" }]
+    }
+  ],
+  
+  "prefer_related_applications": true,
+  "related_applications": [
+  {
+    "platform": "play",
+    "id": "com.google.samples.apps.iosched"
+  }
+  ]
+  
+  
+  
+  
+}
