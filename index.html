@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Projet Akhir 205411165 Henry Winarto</title>
+    
+    
+    <link rel="stylesheet" href="/style.css">
+    
+    
+    <!-- menggunakan kueri media untuk mengubah ukuran font elemen pada ukuran layar yang berbeda: -->
+    <script src="/script.js" defer></script>
+    <style>
+    
+    div.example {
+    background-color: lightgrey;
+    padding: 20px;
+    }
+    
+    @media screen and (min-width: 600px) {
+    div.example {
+      font-size: 80px;
+    }
+    }
+
+    @media screen and (max-width: 600px) {
+    div.example {
+    font-size: 30px;
+    }
+    }
+    </style>
+    
+    <!--+++ Bagian ini untuk menmbahkan link ke web app manifest -->
+    <link rel="manifest" href="/manifest.json">
+    
+    <!--+++  Menambahkan iOS meta tags & icons -->
+    <!--+++ karena Safari pada sistem operasi iOS belum support web app manifest -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Weather PWA">
+    <link rel="apple-touch-icon" href="/images/icons/icon-152x152.png">
+  
+    <!-- Set meta description -->
+    <meta name="description" content="Project Akhir 205411165 Henry Winarto">
+    
+    <!-- CSet warna tema address bar -->
+    <meta name="theme-color" content="#2F3BA2" />
+    
+    <!-- ++++++++++++++++++++ -->
+    <script>
+      if('serviceWorker' in navigator){
+      navigator.serviceWorker.register('service-worker.js')
+      .then(reg => console.log('service worker registered'))
+      .catch(err => console.log('service worker not registered', err));
+      }
+    </script>
+  
+    
+  </head>  
+  <body>
+       
+    <center>
+      <div class="example">Identitas Mahasiswa</div>
+    
+    <p>
+      <table border="1"  cellpadding="10">
+        <tr>
+            <th colspan="4" bgcolor="orange">Data Diri</th>
+        </tr>
+        <tr>
+            <td rowspan="5">
+                <img max-width="100%" height="auto" src="https://cdn.glitch.com/8ff1d0e6-8a31-47d6-810d-67515f159aa0%2Fthumbnails%2FLogo%20Akakom.jpg?1616120515273" width="200" />
+                <!-- logo aakan diperkecil jika harus, tetapi tidak pernah ditingkatkan menjadi lebih besar dari ukuran aslinya -->
+            </td>
+        </tr>        
+        <tr>
+            <td>Nama</td>
+            <td>:</td>
+            <td>Henry Winarto</td>
+        </tr>
+        <tr>
+            <td>Jurusan</td>
+            <td>:</td>
+            <td>Teknik Informatika</td>
+        </tr>
+        <tr>
+            <td>NIM</td>
+            <td>:</td>
+            <td>205411165</td>
+        </tr>
+        <tr>
+            <td>Mata Kuliah</td>
+            <td>:</td>
+            <td><p><a href="https://project-akhir-henry.glitch.me/mata_kuliah.html">Daftar Mata Kuliah</a></p>
+            </td>
+        </tr>
+    </table>
+    </p>
+    </center>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js" defer></script>
+  
+    <script>
+    // Mendaftarkan service worker.
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/service-worker.js')
+        .then((reg) => {
+          console.log('Service worker registered.', reg);
+        });
+  });
+}
+    </script>
+  
+  <!-- Menambahkan install.js -->
+<script src="/scripts/install.js"></script>
+  
+  </body>
+</html>
